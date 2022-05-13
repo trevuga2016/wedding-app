@@ -1,0 +1,27 @@
+.countdown {
+  @media only screen and (max-width: 600px) {
+    width: 100vw;
+  }
+  @media only screen and (min-width: 600px) {
+    width: 90vw;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 60vw;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 30vw;
+  }
+  @media only screen and (min-width: 1200px) {
+    width: 30vw;
+  }
+  @media only screen and (min-width: 1400px) {
+    width: 15vw;
+  }
+  &__digits {
+    font-family: Apple Chancery, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+    color: black;
+    align-items: center;
+    font-weight: bolder;
+  }
+}
