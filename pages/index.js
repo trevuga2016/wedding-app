@@ -1,10 +1,14 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Button, Grid, Typography } from "@mui/material";
-import { Countdown } from "../components/countdown";
+import { Button, Grid } from '@mui/material';
+import { Countdown } from '../components/countdown/countdown';
 import styles from './../styles/home.module.scss';
+import { useRouter } from 'next/router';
+import Header from '../components/header/header';
 
-export const Home = () => {
+export const Main = () => {
+
+  const router = useRouter();
 
   return(
     <>
@@ -14,20 +18,22 @@ export const Home = () => {
       </Head>
       <Grid container direction="column" className={styles["container"]}>
         <Grid item>
-          <Typography className={styles["container__header"]}>Rebecca & Trevor</Typography>
+          <Header title="Rebecca & Trevor" />
         </Grid>
         <Grid item className={styles["container__main-pic"]}>
           <Image src="/trebecca1.png" width={410} height={615} layout="responsive" />
         </Grid>
         <Grid item pt={2}>
-          <Button variant="outlined">Enter Here</Button>
+          <Button variant="outlined" className={styles["container__button"]} onClick={() => router.push('/home')}>Enter Here</Button>
         </Grid>
+        <Grid item>
           <Countdown />
+        </Grid>
       </Grid>
     </>
   );
 }
 
-export default Home;
+export default Main;
 
-Home.displayName = 'Home';
+Main.displayName = 'Main';

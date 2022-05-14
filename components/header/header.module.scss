@@ -1,0 +1,25 @@
+.header {
+  font-size: 6rem;
+  cursor: pointer;
+  @media only screen and (max-width: 600px) {
+    font-size: 1rem !important;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 3rem !important;
+  }
+  @media only screen and (min-width: 600px) {
+    font-size: 4rem !important;
+  }
+  @media only screen and (min-width: 768px) {
+    font-size: 5rem !important;
+  }
+  @media only screen and (min-width: 992px) {
+    font-size: 5rem !important;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 6rem !important;
+  }
+  @media only screen and (min-width: 1400px) {
+    font-size: 6rem !important;
+  }
+}
