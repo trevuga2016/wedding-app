@@ -12,11 +12,11 @@ export const Home = () => {
         <title>Rebecca & Trevor</title>
         <link rel="icon" href="/marriage.ico" />
       </Head>
-      <Grid container direction="column" alignItems="center" sx={{zIndex: '1101'}} position="absolute">
+      <Grid container direction="column" className={styles["container"]}>
         <Grid item>
-          <Typography className={styles["header"]} pt={4}>Rebecca & Trevor</Typography>
+          <Typography className={styles["container__header"]}>Rebecca & Trevor</Typography>
         </Grid>
-        <Grid item className={styles["main-pic"]}>
+        <Grid item className={styles["container__main-pic"]}>
           <Image src="/trebecca1.png" width={410} height={615} layout="responsive" />
         </Grid>
         <Grid item pt={2}>
