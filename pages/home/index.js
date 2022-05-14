@@ -1,9 +1,8 @@
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 import Head from 'next/head';
 import Header from '../../components/header/header';
 import styles from '../../styles/home.module.scss';
 import TabNav from '../../components/tab-nav/tab-nav';
-import LocationMap from '../../components/location-map/location-map';
 
 export const Home = () => {
   return(
@@ -17,13 +16,7 @@ export const Home = () => {
           <Header title="Rebecca & Trevor" />
         </Grid>
         <Grid item>
-          <TabNav initValue={0} />
-        </Grid>
-        <Grid item py={2}>
-          <Typography variant="h4">Wedding Details</Typography>
-        </Grid>
-        <Grid item >
-          <LocationMap />
+          <TabNav />
         </Grid>
       </Grid>
     </>
